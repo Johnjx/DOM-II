@@ -16,4 +16,15 @@ h1.addEventListener("mouseleave", evt => {
 });
 
 
+// click
+
+const sandBus = document.querySelector(".intro img")
+const homeIntro = document.querySelector(".container .intro")
+
+sandBus.addEventListener("click", () => {
+    const hiddenMessage = document.createElement("h2")
+    hiddenMessage.textContent = "The cool way to travel!"
+    hiddenMessage.style.color = 'lightgreen'
+    homeIntro.appendChild(hiddenMessage);
+})
 
