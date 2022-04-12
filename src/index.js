@@ -108,8 +108,18 @@ window.addEventListener("resize", () => {
 
 const welcome = document.querySelector(".intro h2")
 const ctaText = document.querySelector(".intro p")
+const user = document.createElement("input");
 
 welcome.addEventListener("copy", (evt) => {
     evt.target.textContent = "Happy to have you here!";
     ctaText.style.fontSize = "2rem";
+    user.style.marginLeft = "40%";
+    homeIntro.prepend(user);
+})
+
+// focus 10
+
+user.addEventListener("focus", evt => {
+    evt.target.style.background = "yellow";
+    evt.target.style.position = "fixed";
 })
