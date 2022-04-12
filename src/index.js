@@ -93,3 +93,14 @@ const body = document.querySelector("body")
 window.addEventListener("load", () => {
     body.style.backgroundColor = "lightyellow"
 })
+
+// resize 8
+
+const navLinks = document.querySelectorAll(".nav-link")
+
+window.addEventListener("resize", () => {
+    navLinks.forEach(link => {
+        link.style.color = "blue";
+    })
+})
+
