@@ -85,3 +85,11 @@ document.addEventListener("wheel", () => {
     topNav.style.backgroundColor = "lightblue";
 })
 
+
+// load 7
+
+const body = document.querySelector("body")
+
+window.addEventListener("load", () => {
+    body.style.backgroundColor = "lightyellow"
+})
