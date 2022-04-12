@@ -3,19 +3,19 @@ import './less/index.less'
 // Your code goes here!
 // 10 event listeners
 
-// mouseover and mouseleave
+// mouseover and mouseleave 2
 
 const h1 = document.querySelector("header div h1");
 
 h1.addEventListener("mouseover", evt => {
-    evt.target.style.color = 'Blue';
+    evt.target.style.color = 'gold';
 });
 
 h1.addEventListener("mouseleave", evt => {
-    evt.target.style.color = "gold"
+    evt.target.style.color = "blue"
 });
 
-// click
+// click 3
 
 const sandBus = document.querySelector(".intro img")
 const homeIntro = document.querySelector(".container .intro")
@@ -27,7 +27,7 @@ sandBus.addEventListener("click", () => {
     homeIntro.appendChild(hiddenMessage);
 })
 
-// dblclick
+// dblclick 4
 
 const maps = document.querySelector(".content-section div img")
 const section1 = document.querySelector(".content-section .text-content")
@@ -67,13 +67,7 @@ islandBoat.addEventListener("dblclick", () => {
     section3.appendChild(hiddenMessage4);
 })
 
-// const topNav = document.querySelector("header")
-
-// document.addEventListener('wheel', () => {
-//     topNav.style.backgroundColor = "aqau";
-// })
-
-// keydown
+// keydown 5
 
 function escape(evt) {
     if (evt.key === "Escape") {
@@ -82,3 +76,12 @@ function escape(evt) {
 }
 
 document.addEventListener("keydown", escape);
+
+// wheel 6
+
+const topNav = document.querySelector("header")
+
+document.addEventListener("wheel", () => {
+    topNav.style.backgroundColor = "lightblue";
+})
+
