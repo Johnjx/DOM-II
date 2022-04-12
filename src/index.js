@@ -104,3 +104,12 @@ window.addEventListener("resize", () => {
     })
 })
 
+// copy 9 
+
+const welcome = document.querySelector(".intro h2")
+const ctaText = document.querySelector(".intro p")
+
+welcome.addEventListener("copy", (evt) => {
+    evt.target.textContent = "Happy to have you here!";
+    ctaText.style.fontSize = "2rem";
+})
