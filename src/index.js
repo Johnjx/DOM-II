@@ -123,3 +123,12 @@ user.addEventListener("focus", evt => {
     evt.target.style.background = "yellow";
     evt.target.style.position = "fixed";
 })
+
+// prevent Default
+
+
+document.body.addEventListener("keydown", evt => {
+    if (evt.key === "ArrowUp") {
+        evt.preventDefault();
+    }
+});
